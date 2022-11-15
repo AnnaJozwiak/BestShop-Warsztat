@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --color-primary: #08A6E4;
+    --color-primary-shadow: rgba(7, 172, 230, .16);
+    --color-redish: #FB3B64;
+    --color-green: #55DFB4;
+    --color-black: #000000;
+    --color-grey: #A5A5A5;
+    --color-light-grey: #F7F7F7;
+    --color-white: #FFFFFF;
+    --font-Raleway: 'Raleway', sans-serif;
+    --font-OpenSans: 'Open Sans', sans-serif;
+}
+.container {
+    width: 1352px;
+}
+
+/* HEADER */
+.header-opening {
+    width: 100vw;
+    height: 712px;
+    background-image: url("../images/Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
