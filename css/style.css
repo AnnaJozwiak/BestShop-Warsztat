@@ -35,7 +35,8 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.header-nav span {
+.header-nav span,
+.footer-box span {
     font-family: var(--font-Raleway);
     color: var(--color-primary);
     font-size: 32px;
@@ -327,13 +328,30 @@ header {
     margin:0 auto;
     padding-top: 100px;
 }
+.prices-boxes {
+    display: flex;
+    justify-content: space-between;
+}
 .prices-box {
     border: 1px solid var(--color-redish);
     border-radius: 18px;
+    padding-bottom: 81px;
+    padding-left: 119px;
+    padding-right: 118px;
 }
-
 .prices-box-red {
     border: 1px solid var(--color-redish);
+    position: relative;
+}
+.prices-box-green {
+    border: 1px solid var(--color-green);
+    position: relative;
+}
+.prices-box-blue {
+    border: 1px solid var(--color-primary);
+    box-shadow: 5px 10px 27px var(--color-primary-shadow);
+    position: relative;
+    transform: scale(1.1);
 }
 .prices h1 {
     font-family: var(--font-Raleway);
@@ -341,6 +359,7 @@ header {
     font-size: 36px;
     line-height: 42px;
     text-align: center;
+    padding-bottom: 50px;
 }
 .prices-box h2 {
     font-size: 20px;
@@ -348,11 +367,84 @@ header {
     font-family: var(--font-Raleway);
     font-weight: 800;
     padding-top: 34px;
+    padding-bottom: 20px;
+    text-align: center;
+
 }
 .prices-box h3 {
     font-size: 46px;
     line-height: 2px;
     font-family: var(--font-OpenSans);
+    font-weight: 300;
+    padding-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 69px;
+    text-align: center;
+}
+.prices-box h4 {
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 1px;
+    font-family: var(--font-Raleway);
+    text-align: center;
+}
+.prices-box-red h3 {
+    color: var(--color-redish);
+}
+.prices-box-green h3 {
+    color: var(--color-green);
+    margin-bottom: 35px;
+}
+.prices-box-blue h3 {
+    color: var(--color-primary);
+    margin-bottom: 35px;
+}
+.prices-box-blue h3 {
+    color: var(--color-primary);
+}
+.prices-box-blue h4,
+.prices-box-green h4 {
+    margin-bottom: 34px;
+}
+.checkbox {
+    font-size: 14px;
+    line-height: 41px;
+    font-family: var(--font-OpenSans);
     font-weight: 400;
-    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+.prices-button {
+    border-radius: 40px;
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 41px;
+    padding: 8px 57px;
+    top: 20px;
+}
+.button-red {
+    background: var(--color-redish);
+    position: absolute;
+    top: 92%;
+}
+.button-blue {
+    background: var(--color-primary);
+    position: absolute;
+    top: 92%;
+}
+.button-green {
+    background: var(--color-green);
+    position: absolute;
+    top: 92%;
+}
+
+
+/*footer*/
+footer {
+    margin-top: 100px;
+    height: 89px;
+    box-shadow: 0 3px 6px #00000029;
+    padding-top: 20px;
+
 }
