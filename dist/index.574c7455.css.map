@@ -1,0 +1,1 @@
+{"mappings":"ACAA;;;;AAIA;;;;;;;;;;;;AAYA;;;;AAIA;;;;AAIA;;;;AAIA;;;;AAIA;;;;;AAKA;;;;;AAKA","sources":["scss/main.scss","scss/_reset.scss"],"sourcesContent":["@import \"reset\";\r\n@import \"variables/colors\";\r\n@import \"variables/fonts\";\r\n@import \"variables/breakpoints\";",null],"names":[],"version":3,"file":"index.574c7455.css.map","sourceRoot":"/__parcel_source_root/"}
