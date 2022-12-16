@@ -1,3 +1,30 @@
-tablet  od 793
-wiekszy tablet od 1025
-desktop od 1353
+$tablet-small-width: 793px;
+$tablet-width: 1025px;
+$desktop-width: 1353px;
+
+$tablet-small-start: $tablet-small-width;
+$tablet-small-end: calc($tablet-small-width - 1px);
+
+
+$tablet-start: $tablet-width;
+$tablet-end: calc($desktop-width - 1px);
+
+$desktop-start: $desktop-width;
+
+@mixin tablet_small {
+  @media screen and (min-width: $tablet-small-start) {
+    @content;
+  }
+}
+
+@mixin  tablet {
+  @media screen and (min-width: $tablet-start){
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-start){
+    @content;
+  }
+}

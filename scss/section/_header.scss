@@ -1,0 +1,114 @@
+@use "sass:color";
+
+header {
+  $nav-width: 100%;
+
+  padding: 16px 15px 0 15px;
+  height: 70px;
+  box-shadow: 0 3px 6px #00000029;
+
+
+  @include tablet_small {
+    padding-top: 16px;
+  }
+
+  .header-nav {
+
+    @include tablet_small {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    span {
+      font-family: $font-Raleway;
+      color: $color-primary;
+      font-size: 32px;
+      line-height: 37px;
+      font-weight: 300;
+    }
+
+    ul {
+
+      @include tablet_small {
+        display: flex;
+        gap: 71px;
+      }
+      li {
+        padding: 14px 0;
+        .header-nav-menu-link {
+          color: $color-grey;
+          letter-spacing: 3.28px;
+          font-size: 11px;
+          font-weight: 700;
+          line-height: 15px;
+          width: 100%;
+
+          @include tablet-small {
+            padding-left: 12px;
+            padding-right: 12px;
+          }
+
+          &:hover {
+            width: 100%;
+            color: $color-black;
+            border-bottom: 4px solid $color-primary;
+            padding-bottom: 11px;
+
+          }
+        }
+      }
+
+    }
+
+    input#nav-menu-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: $color-primary;
+      font-size: 30px;
+      padding: 20px 15px;
+
+
+      transform: translateX(0);
+      transition: transform 0.5s;
+
+      &:active {
+        background-color: $color-white;
+      }
+
+      &:checked {
+        //transform: translateY(70px);
+
+        ~ nav {
+          transform: translateY(76px);
+        }
+      }
+
+      @include tablet-small {
+        display: none;
+      }
+    }
+
+    nav {
+      $nav-border: 1px solid color.adjust($color-primary, $lightness: 50%);
+      top: 0;
+      bottom: 0;
+      height: auto;
+      width: 100%;
+      position: fixed;
+      overflow: scroll;
+      background-color: white;
+      transform: translateY(-900px);
+      transition: transform 0.5s;
+
+      @include tablet-small {
+        background: none;
+        height: unset;
+        width: unset;
+        position: static;
+        transform: unset;
+      }
+    }
+  }
+}

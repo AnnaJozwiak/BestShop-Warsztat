@@ -1,0 +1,97 @@
+.prices {
+  padding-top: 50px;
+
+  @include desktop {
+    padding-top: 100px;
+  }
+  h1 {
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .prices-boxes {
+
+    @include desktop {
+      display: flex;
+      gap: 59px;
+    }
+
+    .prices-box-red {
+      border: 1px solid $color-redish;
+      position: relative;
+      h3 {
+        color: $color-redish;
+      }
+    }
+    .prices-box-green {
+      border: 1px solid $color-green;
+      position: relative;
+      h3 {
+        color: $color-green;
+        margin-bottom: 35px;
+      }
+      h4 {
+        margin-bottom: 34px;
+      }
+    }
+    .prices-box-blue {
+      border: 1px solid $color-primary;
+      box-shadow: 5px 10px 27px $color-primary-shadow;
+      position: relative;
+      transform: scale(1.1);
+      h3 {
+        color: $color-primary;
+        margin-bottom: 35px;
+      }
+      h4 {
+        margin-bottom: 34px;
+      }
+    }
+
+    .prices-box {
+      border: 1px solid $color-redish;
+      border-radius: 18px;
+      padding-bottom: 81px;
+      padding-left: 119px;
+      padding-right: 118px;
+
+      .prices-button {
+        border-radius: 40px;
+        font-size: 13px;
+        font-weight: 800;
+        line-height: 41px;
+        padding: 8px 57px;
+        top: 20px;
+      }
+
+      .button-red {
+        background: var(--color-redish);
+        position: absolute;
+        top: 92%;
+      }
+      .button-blue {
+        background: var(--color-primary);
+        position: absolute;
+        top: 92%;
+      }
+      .button-green {
+        background: var(--color-green);
+        position: absolute;
+        top: 92%;
+      }
+
+      .prices-boxes-checkboxes {
+        .checkbox {
+          font-size: 14px;
+          line-height: 41px;
+          font-family: var(--font-OpenSans);
+          font-weight: 400;
+          display: flex;
+          justify-content: center;
+          gap:10px;
+        }
+      }
+    }
+  }
+}
