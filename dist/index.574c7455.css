@@ -224,7 +224,7 @@ header .header-nav nav {
   position: fixed;
   top: 0;
   bottom: 0;
-  overflow: scroll;
+  overflow: hidden;
   transform: translateY(-900px);
 }
 
@@ -557,6 +557,171 @@ header .header-nav nav {
   gap: 10px;
   font-weight: 400;
   display: flex;
+}
+
+@media screen and (min-width: 1353px) {
+  .contact {
+    width: 896px;
+    margin-top: 179px;
+  }
+}
+
+.contact .contact-box {
+  padding: 50px 15px;
+}
+
+@media screen and (min-width: 1025px) {
+  .contact .contact-box {
+    justify-content: space-between;
+    padding: 0;
+    display: flex;
+  }
+}
+
+.contact .contact-box .contact-box-text h1 {
+  font-size: 49px;
+  font-weight: 400;
+  line-height: 57px;
+}
+
+.contact .contact-box .contact-box-text h2 {
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+@media screen and (min-width: 1025px) {
+  .contact .contact-box .contact-box-text h2 {
+    text-align: center;
+    margin-top: 22px;
+    padding-top: 34px;
+  }
+}
+
+.contact .contact-box .contact-box-text .contact-box-text-phone-email {
+  flex-direction: column;
+  margin-top: 42px;
+  padding-bottom: 20px;
+  display: flex;
+}
+
+@media screen and (min-width: 1025px) {
+  .contact .contact-box .contact-box-text .contact-box-text-phone-email {
+    flex-direction: row;
+  }
+}
+
+.contact .contact-box .contact-box-text .contact-box-text-phone-email .mail-text, .contact .contact-box .contact-box-text .contact-box-text-phone-email .phone-text {
+  color: #a5a5a5;
+  font-family: Open Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.contact .contact-box .contact-box-text .contact-box-text-phone-email .phone-img, .contact .contact-box .contact-box-text .contact-box-text-phone-email .mail-img {
+  padding-right: 10px;
+}
+
+.contact .contact-box .contact-box-text .contact-box-text-phone-email .mail-text {
+  padding-right: 20px;
+}
+
+.contact .contact-box .contact-box-form {
+  flex-direction: column;
+  display: flex;
+}
+
+@media screen and (min-width: 1025px) {
+  .contact .contact-box .contact-box-form {
+    width: 440px;
+  }
+}
+
+.contact .contact-box .contact-box-form .form-name {
+  margin-bottom: 42px;
+}
+
+.contact .contact-box .contact-box-form .form-mail {
+  margin-bottom: 30px;
+}
+
+.contact .contact-box .contact-box-form .contact-box-form-button {
+  background: #08a6e4;
+  border: 0;
+  border-radius: 35px;
+  align-self: flex-end;
+  margin-top: 20px;
+  padding: 20px 97px;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 18px;
+}
+
+.contact .contact-box .contact-box-form .form-checkbox-label {
+  cursor: pointer;
+  display: flex;
+}
+
+.contact .contact-box .contact-box-form .form-checkbox-label .input-checkbox {
+  width: 0;
+  height: 0;
+}
+
+.contact .contact-box .contact-box-form .form-checkbox-label .input-checkbox:after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: 1px solid #a5a5a5;
+  border-radius: 4px;
+  display: block;
+}
+
+.contact .contact-box .contact-box-form .form-checkbox-label .input-checkbox:checked:after {
+  background-image: url("Checkmark.5be52c02.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+}
+
+.contact .contact-box .contact-box-form .form-checkbox-label .form-checkbox-text {
+  color: #707070;
+  margin: 0 34px;
+  font-family: Open Sans, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.contact .contact-box .contact-box-form .form-text {
+  flex-direction: column;
+  display: flex;
+}
+
+.contact .contact-box .contact-box-form .form-text .form-text-input {
+  color: #707070;
+  border: 0;
+  border-bottom: 1px solid #95989a;
+  padding: 5px;
+  font-family: Open Sans, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.contact .contact-box .contact-box-form .form-text .form-text-label {
+  color: #08a6e4;
+  letter-spacing: 3.28px;
+  padding-bottom: 20px;
+  font-family: Open Sans, sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 15px;
 }
 
 footer {

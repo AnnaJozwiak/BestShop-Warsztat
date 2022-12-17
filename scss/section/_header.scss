@@ -97,7 +97,7 @@ header {
       height: auto;
       width: 100%;
       position: fixed;
-      overflow: scroll;
+      overflow: hidden;
       background-color: white;
       transform: translateY(-900px);
       transition: transform 0.5s;

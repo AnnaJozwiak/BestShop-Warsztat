@@ -1,0 +1,163 @@
+.contact {
+
+  @include desktop {
+    width: 896px;
+    margin-top:179px;
+  }
+
+  .contact-box {
+    padding: 50px 15px;
+
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+    }
+
+    .contact-box-text{
+      h1 {
+        font-size: 49px;
+        line-height: 57px;
+        font-weight: 400;
+
+
+      }
+      h2 {
+        font-size: 16px;
+        line-height: 22px;
+        font-family: $font-Raleway;
+        font-weight: 400;
+        padding-top: 5px;
+        padding-bottom: 20px;
+        text-align: left;
+
+        @include tablet {
+          margin-top: 22px;
+          padding-top: 34px;
+          text-align: center;
+        }
+      }
+      .contact-box-text-phone-email {
+        margin-top: 42px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+
+        @include tablet {
+          flex-direction: row;
+        }
+        .mail-text,
+        .phone-text {
+          font-family: $font-OpenSans;
+          font-size: 16px;
+          line-height: 22px;
+          font-weight: 400;
+          text-decoration: none;
+          color: $color-grey;
+        }
+        .phone-img,
+        .mail-img {
+          padding-right: 10px;
+        }
+        .mail-text {
+          padding-right: 20px;
+        }
+      }
+
+    }
+
+    .contact-box-form {
+      display: flex;
+      flex-direction: column;
+
+      @include tablet {
+        width: 440px;
+      }
+
+      .form-name {
+        margin-bottom: 42px;
+      }
+      .form-mail {
+        margin-bottom: 30px;
+      }
+
+      .contact-box-form-button {
+        border-radius: 35px;
+        background: $color-primary;
+        border: 0;
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 800;
+        padding: 20px 97px;
+        margin-top: 20px;
+        align-self: flex-end;
+      }
+
+      .form-checkbox-label {
+        display: flex;
+        cursor: pointer;
+
+        .input-checkbox {
+          width: 0;
+          height: 0;
+
+          &:after{
+            content: "";
+            width: 24px;
+            height: 24px;
+            display: block;
+            border: 1px solid $color-grey;
+            border-radius: 4px;
+          }
+
+          &:checked::after {
+            background-image: url("../images/Checkmark.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 12px;
+          }
+        }
+
+        .form-checkbox-text {
+          line-height: 17px;
+          font-size: 12px;
+          font-weight: 400;
+          font-family: $font-OpenSans;
+          color: #707070;
+          margin: 0 34px;
+        }
+
+      }
+
+      .form-text {
+        display: flex;
+        flex-direction: column;
+
+        .form-text-input {
+          border-bottom: 1px solid #95989A;
+          border-top: 0;
+          border-right: 0;
+          border-left: 0;
+          line-height: 17px;
+          font-size: 12px;
+          font-weight: 400;
+          font-family: $font-OpenSans;
+          color: #707070;
+          padding: 5px 5px;
+        }
+
+        .form-text-label {
+          line-height: 15px;
+          font-size: 11px;
+          font-weight: 800;
+          font-family: $font-OpenSans;
+          color: $color-primary;
+          letter-spacing: 3.28px;
+          padding-bottom: 20px;
+        }
+      }
+
+    }
+
+  }
+}
