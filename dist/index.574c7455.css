@@ -217,7 +217,7 @@ header .header-nav input#nav-menu-button:checked ~ nav {
 }
 
 header .header-nav nav {
-  height: auto;
+  height: 200px;
   width: 100%;
   background-color: #fff;
   transition: transform .5s;
@@ -225,7 +225,7 @@ header .header-nav nav {
   top: 0;
   bottom: 0;
   overflow: hidden;
-  transform: translateY(-900px);
+  transform: translateY(-300px);
 }
 
 @media screen and (min-width: 793px) {
@@ -609,6 +609,12 @@ header .header-nav nav {
   padding: 0 15px;
 }
 
+@media screen and (min-width: 1025px) {
+  .benefit {
+    padding: 0 100px;
+  }
+}
+
 .benefit .benefit-boxes {
   flex-direction: column;
   align-items: center;
@@ -636,7 +642,6 @@ header .header-nav nav {
 
 @media screen and (min-width: 1025px) {
   .benefit .benefit-boxes .benefit-box {
-    width: 1124px;
     height: 370px;
     flex-direction: row;
   }
@@ -654,11 +659,7 @@ header .header-nav nav {
   margin-right: 160px;
 }
 
-.benefit .benefit-boxes .benefit-box .benefit-text3 {
-  margin-right: 34px;
-}
-
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1353px) {
   .benefit .benefit-boxes .benefit-box .benefit-text3 h1 {
     padding-right: 206px;
   }
@@ -821,7 +822,6 @@ header .header-nav nav {
 
 @media screen and (min-width: 1025px) {
   .benefit .benefit-boxes .benefit-box-text-img .benefit-box-img3 {
-    width: 440px;
     height: 370px;
     margin-bottom: 0;
     padding-top: 98px;
