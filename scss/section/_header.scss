@@ -79,6 +79,7 @@ header {
 
       &:checked {
         //transform: translateY(70px);
+        //display: none;
 
         ~ nav {
           transform: translateY(76px);
@@ -89,6 +90,7 @@ header {
         display: none;
       }
     }
+    
 
     nav {
       $nav-border: 1px solid color.adjust($color-primary, $lightness: 50%);

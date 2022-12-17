@@ -1,7 +1,11 @@
 .contact {
+  margin-top:50px;
 
+  @include tablet {
+    margin-top:70px;
+  }
   @include desktop {
-    width: 896px;
+    //width: 896px;
     margin-top:179px;
   }
 
@@ -13,14 +17,17 @@
       justify-content: space-between;
       padding: 0;
     }
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+      padding: 80px 100px;
+    }
 
     .contact-box-text{
       h1 {
         font-size: 49px;
         line-height: 57px;
         font-weight: 400;
-
-
       }
       h2 {
         font-size: 16px;
@@ -32,13 +39,12 @@
         text-align: left;
 
         @include tablet {
-          margin-top: 22px;
+          //margin-top: 22px;
           padding-top: 34px;
-          text-align: center;
         }
       }
       .contact-box-text-phone-email {
-        margin-top: 42px;
+        margin-top: 20px;
         display: flex;
         flex-direction: column;
         padding-bottom: 20px;
@@ -63,7 +69,6 @@
           padding-right: 20px;
         }
       }
-
     }
 
     .contact-box-form {
@@ -126,7 +131,6 @@
           color: #707070;
           margin: 0 34px;
         }
-
       }
 
       .form-text {
@@ -156,8 +160,6 @@
           padding-bottom: 20px;
         }
       }
-
     }
-
   }
 }

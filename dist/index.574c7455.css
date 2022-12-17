@@ -517,11 +517,21 @@ header .header-nav nav {
 }
 
 .prices .prices-boxes .prices-box {
-  width: 370px;
+  max-width: 370px;
   border-radius: 18px;
   flex-direction: row;
   justify-content: center;
+  gap: 30px;
   padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+}
+
+.prices .prices-boxes .prices-box .prices-details {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   display: flex;
 }
 
@@ -549,16 +559,34 @@ header .header-nav nav {
   top: 92%;
 }
 
+@media screen and (min-width: 1353px) {
+  .prices .prices-boxes .prices-box .button-red {
+    top: 96%;
+  }
+}
+
 .prices .prices-boxes .prices-box .button-blue {
   background: #08a6e4;
   position: absolute;
   top: 92%;
 }
 
+@media screen and (min-width: 1353px) {
+  .prices .prices-boxes .prices-box .button-blue {
+    top: 96%;
+  }
+}
+
 .prices .prices-boxes .prices-box .button-green {
   background: #55dfb4;
   position: absolute;
   top: 92%;
+}
+
+@media screen and (min-width: 1353px) {
+  .prices .prices-boxes .prices-box .button-green {
+    top: 96%;
+  }
 }
 
 .prices .prices-boxes .prices-box .prices-boxes-checkboxes .checkbox {
@@ -630,8 +658,10 @@ header .header-nav nav {
   margin-right: 34px;
 }
 
-.benefit .benefit-boxes .benefit-box .benefit-text3 h1 {
-  padding-right: 206px;
+@media screen and (min-width: 1025px) {
+  .benefit .benefit-boxes .benefit-box .benefit-text3 h1 {
+    padding-right: 206px;
+  }
 }
 
 .benefit .benefit-boxes .benefit-box .benefit-box-img2 {
@@ -801,7 +831,6 @@ header .header-nav nav {
 }
 
 .benefit .benefit-boxes .benefit-box-text-img .benefit-box-img3 img {
-  width: 295px;
   height: 207px;
 }
 
@@ -826,9 +855,18 @@ header .header-nav nav {
   }
 }
 
+.contact {
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 1025px) {
+  .contact {
+    margin-top: 70px;
+  }
+}
+
 @media screen and (min-width: 1353px) {
   .contact {
-    width: 896px;
     margin-top: 179px;
   }
 }
@@ -841,6 +879,14 @@ header .header-nav nav {
   .contact .contact-box {
     justify-content: space-between;
     padding: 0;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1353px) {
+  .contact .contact-box {
+    justify-content: space-between;
+    padding: 80px 100px;
     display: flex;
   }
 }
@@ -863,15 +909,13 @@ header .header-nav nav {
 
 @media screen and (min-width: 1025px) {
   .contact .contact-box .contact-box-text h2 {
-    text-align: center;
-    margin-top: 22px;
     padding-top: 34px;
   }
 }
 
 .contact .contact-box .contact-box-text .contact-box-text-phone-email {
   flex-direction: column;
-  margin-top: 42px;
+  margin-top: 20px;
   padding-bottom: 20px;
   display: flex;
 }

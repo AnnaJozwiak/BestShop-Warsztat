@@ -49,8 +49,11 @@
       .benefit-text3 {
         margin-right: 34px;
         h1{
-          /* 34px z article-text3*/
-          padding-right: calc(240px - 34px);
+                   @include tablet {
+            /* 34px z article-text3*/
+            padding-right: calc(240px - 34px);
+          }
+
         }
       }
 
@@ -210,7 +213,7 @@
         }
 
         img {
-          width: 295px;
+          //width: 295px;
           height: 207px;
 
           @include tablet {
