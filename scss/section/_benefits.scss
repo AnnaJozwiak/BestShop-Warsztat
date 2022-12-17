@@ -1,0 +1,237 @@
+.benefit {
+
+  background: $color-light-grey;
+  border-top: 1px solid #E8E9ED;
+  padding: 0 15px;
+
+  @include tablet {
+    //height: 1395px;
+  }
+
+  .benefit-boxes {
+    margin-top: 50px;
+    gap: 37px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+      margin-top: 105px;
+    }
+
+    .benefit-box {
+      background: $color-white;
+      border: 1px solid #E8E9ED;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 35px;
+
+      @include tablet {
+        width: 1124px;
+        height: 370px;
+        flex-direction: row;
+      }
+
+      .benefit-text1 {
+        @include tablet {
+          margin-right: 169px;
+        }
+      }
+      .benefit-text2 {
+        margin-right: 20px;
+        h1 {
+          margin-right: 160px;
+        }
+      }
+      .benefit-text3 {
+        margin-right: 34px;
+        h1{
+          /* 34px z article-text3*/
+          padding-right: calc(240px - 34px);
+        }
+      }
+
+
+
+      .benefit-box-img2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include tablet {
+          margin-right: 192px;
+          margin-left: 35px; /* 35px, bo padding wczesniej jest 35px*/
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          background: $color-primary;
+          border-radius: 50%;
+          width: 130px;
+          height: 130px;
+          top: 12px;
+
+          @include tablet {
+            width: 320px;
+            height: 320px;
+            top: 12px;
+          }
+        }
+
+        .benefit-img2 {
+          width: 175px;
+          height: 135px;
+          position: relative;
+          z-index: 1;
+          margin-top: 29px;
+
+          @include tablet {
+            width: 426px;
+            height: 328px;
+          }
+        }
+      }
+
+      .benefit-box-img1 {
+        position: relative;
+        margin-top: 38px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          background: $color-redish;
+          border-radius: 41px;
+          width: 93px;
+          height: 93px;
+          transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+          top: -26px;
+          right: -17px;
+
+          @include tablet {
+            width: 200px;
+            height: 200px;
+            top: -40px;
+            right: 100px;
+          }
+        }
+
+        .benefit-img1 {
+          width: 192px;
+          height: 108px;
+          position: relative;
+          z-index: 1;
+
+          @include tablet {
+            width: 386.44px;
+            height: 219px;
+            margin-right: 117.56px;
+          }
+        }
+      }
+
+      .benefit-box-text{
+        h1 {
+          padding-bottom: 30px;
+        }
+        span {
+          color: $color-black;
+          font-size:  16px;
+          line-height: 22px;
+          font-family: $font-OpenSans;
+          padding-bottom: 50px;
+        }
+
+        .benefit-border {
+          height: 4px;
+          width: 327.81px;
+          margin-top: 50px;
+        }
+        .border-red {
+          @include tablet {
+            background: $color-redish;
+          }
+        }
+        .border-blue {
+          @include tablet {
+            background: $color-primary;
+          }
+        }
+        .border-green {
+         @include tablet {
+            background: $color-green;
+          }
+        }
+
+      }
+    }
+
+    .b_box2 {
+      display: flex;
+      flex-direction: column;
+
+      @include tablet {
+        flex-direction: row;
+      }
+    }
+
+    .benefit-box-text-img {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      @include tablet {
+        flex-direction: row;
+        gap: 61px;
+      }
+
+      .benefit-box-img3 {
+        height: 262px;
+        background: $color-green;
+        border: 1px solid #E8E9ED;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+
+        @include tablet {
+
+          width: 440px;
+          height: 370px;
+          padding-left: 62px;
+          padding-top: 98px;
+          padding-bottom: 64px;
+          margin-bottom: 0;
+        }
+
+        img {
+          width: 295px;
+          height: 207px;
+
+          @include tablet {
+            width: 295px;
+            height: 207px;
+          }
+        }
+      }
+
+      .benefit-box {
+        //width: 623px;
+        @include tablet {
+          width: 623px;
+        }
+        .benefit-box-text {
+          padding-top: 30px;
+          @include tablet {
+            padding-top: 0;
+          }
+      }
+      }
+    }
+  }
+}

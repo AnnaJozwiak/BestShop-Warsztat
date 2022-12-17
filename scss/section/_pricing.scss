@@ -1,5 +1,7 @@
 .prices {
   padding-top: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
 
   @include desktop {
     padding-top: 100px;
@@ -11,10 +13,14 @@
   }
 
   .prices-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:59px;
 
     @include desktop {
-      display: flex;
-      gap: 59px;
+      flex-direction: row;
     }
 
     .prices-box-red {
@@ -51,33 +57,42 @@
     }
 
     .prices-box {
-      border: 1px solid $color-redish;
       border-radius: 18px;
-      padding-bottom: 81px;
-      padding-left: 119px;
-      padding-right: 118px;
+      width:370px;
+      padding-bottom: 25px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      @include desktop {
+        flex-direction: column;
+        padding-bottom: 81px;
+        padding-left: 119px;
+        padding-right: 118px;
+      }
 
       .prices-button {
         border-radius: 40px;
         font-size: 13px;
         font-weight: 800;
         line-height: 41px;
-        padding: 8px 57px;
+        //padding: 8px 57px;
+        padding: 2px 70px;
         top: 20px;
       }
 
       .button-red {
-        background: var(--color-redish);
+        background: $color-redish;
         position: absolute;
         top: 92%;
       }
       .button-blue {
-        background: var(--color-primary);
+        background: $color-primary;
         position: absolute;
         top: 92%;
       }
       .button-green {
-        background: var(--color-green);
+        background: $color-green;
         position: absolute;
         top: 92%;
       }
@@ -86,11 +101,13 @@
         .checkbox {
           font-size: 14px;
           line-height: 41px;
-          font-family: var(--font-OpenSans);
           font-weight: 400;
           display: flex;
-          justify-content: center;
           gap:10px;
+
+          @include desktop {
+            justify-content: center;
+          }
         }
       }
     }
