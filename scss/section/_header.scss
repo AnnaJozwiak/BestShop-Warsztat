@@ -6,6 +6,12 @@ header {
   padding: 16px 15px 0 15px;
   height: 70px;
   box-shadow: 0 3px 6px #00000029;
+  //position: fixed;
+  //top:0;
+  //left: 0;
+  //width: 100%;
+  //background-color: white;
+  //z-index: 1;
 
 
   @include tablet_small {
@@ -13,6 +19,8 @@ header {
   }
 
   .header-nav {
+
+
 
     @include tablet_small {
       display: flex;
@@ -90,18 +98,18 @@ header {
         display: none;
       }
     }
-    
+
 
     nav {
-      $nav-border: 1px solid color.adjust($color-primary, $lightness: 50%);
+      //border: 1px solid color.adjust($color-primary, $lightness: 50%);
       top: 0;
       bottom: 0;
-      height: auto;
+      height: 200px;
       width: 100%;
       position: fixed;
       overflow: hidden;
       background-color: white;
-      transform: translateY(-900px);
+      transform: translateY(-300px);
       transition: transform 0.5s;
 
       @include tablet-small {
